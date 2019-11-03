@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import characters from "./characters.json";
-import Sort from "./Sort.js"
+import Sort from "./Sort.js";
+import Wrapper from "./components.wrapper.js"
+import Nav from './components/nav';
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -12,7 +14,10 @@ class App extends Component {
 
 render() {
   return (
-    <div></div>
+    <Wrapper>
+      <Nav/>
+      
+    </Wrapper>
   );
 }
 
